@@ -20,5 +20,10 @@ class DasboardController extends Controller
     {
         return view ('main.user');
     }
+
+    public function hu()
+    {
+        return view ('main.kasir');
+    }
     //
 }

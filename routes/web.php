@@ -22,4 +22,5 @@ use App\Http\Controllers\DasboardController;
 Route::get('/main/dashboard', [DasboardController::class, 'dash']);
 Route::get('/main/laporan', [DasboardController::class, 'ho']);
 Route::get('/main/user', [DasboardController::class, 'hi']);
+Route::get('/main/kasir', [DasboardController::class, 'hu']);
 
