@@ -51,12 +51,15 @@
                         Login
                     </button>
                     </div>
+                    <div class="form-group">
+                    <p class="center">REGISTER KHUSUS USER ANDA USER JANGAN COBA JADI ADMIN!!</p><a href="{{route('register')}}">Register</a>
+                    </div>
                 </form>
               </div>
             </div>
-            <div class="simple-footer">
+            <!-- <div class="simple-footer">
               Copyright &copy; LaraPOS 2020
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

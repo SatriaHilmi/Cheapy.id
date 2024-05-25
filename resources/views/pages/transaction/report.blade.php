@@ -36,6 +36,7 @@
                                     <th>Pelanggan</th>
                                     <th>Total</th>
                                     <th>Tanggal</th>
+                                    <th>Status</th>
                                 </tr>
                             </thead>
                             <tbody>

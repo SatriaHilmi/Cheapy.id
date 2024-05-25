@@ -66,7 +66,7 @@
                             </div>
 
                             <div class="col-lg-5">
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label>Kode Produk</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
@@ -76,7 +76,7 @@
                                         </div>
                                         <input type="text" class="form-control" name="product_code" value="{{ $item->product_code }}">
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="form-group">
                                     <label>Nama</label>
                                     <div class="input-group">
@@ -88,7 +88,7 @@
                                         <input type="text" class="form-control" name="name" value="{{ $item->name }}">
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label>Kategori</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
@@ -105,7 +105,7 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="col-lg-5">
@@ -120,7 +120,7 @@
                                         <input type="number" class="form-control currency" name="stock" value="{{ $item->stock }}">
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label>
                                         Harga Beli
                                     </label>
@@ -133,7 +133,7 @@
                                         </div>
                                         <input type="text" class="form-control currency" name="purchase_price" value="{{ $item->purchase_price }}">
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="form-group">
                                     <label>
                                         Harga Jual

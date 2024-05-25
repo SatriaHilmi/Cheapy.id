@@ -11,8 +11,11 @@ class Product extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'product_code', 'photo', 'name', 'selling_price',
-        'purchase_price', 'stock', 'category_id'
+        // 'product_code',
+        'photo', 'name', 'selling_price',
+        // 'purchase_price',
+        'stock', 
+        // 'category_id'
     ];
 
     protected $hidden = [];

@@ -74,12 +74,14 @@
                         Register
                     </button>
                     </div>
+                    <div class="form-group">
+                    <p class="center">SUDAH ADA AKUN, YAUDAH KEMBALI CUY!!</p><a href="{{route('login')}}">Login</a>
                 </form>
               </div>
             </div>
-            <div class="simple-footer">
+            <!-- <div class="simple-footer">
               Copyright &copy; LaraPOS 2020
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

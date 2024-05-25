@@ -31,11 +31,11 @@
                 <i class="ion-android-list"></i> <span>Product List</span></a>
             </li>
 
-            <li class="{{ (Request::url() === route('product-category.index')) ? 'active' : '' }}">
+            <!-- <li class="{{ (Request::url() === route('product-category.index')) ? 'active' : '' }}">
               <a class="nav-link" href="{{ route('product-category.index') }}">
                 <i class="ion-pricetags"></i> <span>Product Categories</span>
               </a>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -43,9 +43,9 @@
             <a class="nav-link" href="{{ route('customer.index') }}"><i class="ion-person-stalker"></i> <span>Customers</span></a>
           </li>
 
-          <li class="{{ (Request::url() === route('coupon.index')) ? 'active' : '' }}">
+          <!-- <li class="{{ (Request::url() === route('coupon.index')) ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('coupon.index') }}"><i class="ion-cash"></i> <span>Coupons</span></a>
-          </li>
+          </li> -->
 
           <li class="{{ (Request::url() === route('companyProfile.index')) ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('companyProfile.index') }}"><i class="ion-android-settings"></i> <span>Company Profile</span></a>
@@ -63,10 +63,10 @@
           </a>
           <ul class="dropdown-menu">
 
-            <li class="{{ Request::is('transaction/create/*') ? 'active' : '' }}">
+            <!-- <li class="{{ Request::is('transaction/create/*') ? 'active' : '' }}">
               <a class="nav-link" href="{{ route('transaction.create', AppHelper::transaction_code()) }}">
                 <i class="ion-bag"></i> <span>Create Transaction</span></a>
-            </li>
+            </li> -->
             
             <li class="{{ Request::url() === route('transaction.index') ? 'active' : '' }}">
               <a class="nav-link" href="{{ route('transaction.index') }}">

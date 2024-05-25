@@ -62,13 +62,13 @@ class ProductController extends Controller
         
         if ($photo){
             $data['photo'] = $photo->store(
-                'assets/product', 'public'
+                'assets/img_product', 'public'
             );
         }else{
             $data['photo'] = "";
         }
 
-        $data['purchase_price'] = str_replace(',', '', $data['purchase_price']);
+        // $data['purchase_price'] = str_replace(',', '', $data['purchase_price']);
         $data['selling_price'] = str_replace(',', '', $data['selling_price']);
 
         Product::create($data);
@@ -119,12 +119,12 @@ class ProductController extends Controller
         $photo = $request->file('photo');
 
         $data = $request->all();
-        $data['purchase_price'] = str_replace(',', '', $data['purchase_price']);
+        // $data['purchase_price'] = str_replace(',', '', $data['purchase_price']);
         $data['selling_price'] = str_replace(',', '', $data['selling_price']);
         
         if ($photo){
             $data['photo'] = $photo->store(
-                'assets/product', 'public'
+                'assets/img_product', 'public'
             );
         }
 
