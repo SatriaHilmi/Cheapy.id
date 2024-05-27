@@ -43,9 +43,10 @@
             <a class="nav-link" href="{{ route('customer.index') }}"><i class="ion-person-stalker"></i> <span>Customers</span></a>
           </li>
 
-          <!-- <li class="{{ (Request::url() === route('coupon.index')) ? 'active' : '' }}">
-            <a class="nav-link" href="{{ route('coupon.index') }}"><i class="ion-cash"></i> <span>Coupons</span></a>
-          </li> -->
+          <li class="{{ (Request::url() === route('suppliers.index')) ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('suppliers.index') }}"><i class="ion-android-car"></i> <span>Suppliers</span></a>
+</li>
+
 
           <li class="{{ (Request::url() === route('companyProfile.index')) ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('companyProfile.index') }}"><i class="ion-android-settings"></i> <span>Company Profile</span></a>
@@ -73,9 +74,9 @@
                 <i class="ion-ios-list"></i> <span>Transaction List</span></a>
             </li>
 
-            <li class="{{ Request::url() === route('transaction.report') ? 'active' : '' }}">
-              <a class="nav-link" href="#" data-toggle="modal" data-target="#transactionModal">
-                <i class="ion-clipboard"></i> <span>Transaction Report</span></a>
+            <li class="{{ Request::url() === route('purchases.index') ? 'active' : '' }}">
+              <a class="nav-link" href="{{ route('purchases.index') }}">
+                <i class="ion-ios-list"></i> <span>Purchases List</span></a>
             </li>
 
           </ul>

@@ -17,9 +17,6 @@ class CreateTransactionsTable extends Migration
             $table->string('transaction_code')->primary();
             $table->unsignedBigInteger('user_id')->nullable();
             $table->unsignedBigInteger('customer_id')->nullable();
-            $table->unsignedBigInteger('coupon_id')->nullable()->unsigned();
-            $table->integer('discount')->nullable();
-            $table->integer('discount_price')->nullable();
             $table->integer('sub_total')->nullable();
             $table->integer('grand_total')->nullable();
             $table->integer('paid')->nullable();
@@ -29,7 +26,6 @@ class CreateTransactionsTable extends Migration
             
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('customer_id')->references('id')->on('customers');
-            $table->foreign('coupon_id')->references('id')->on('coupons');
         });
     }
 
